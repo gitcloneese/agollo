@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/philchia/agollo/v4"
+	"github.com/gitcloneese/agollo"
 )
 
 func main() {

@@ -6,7 +6,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/philchia/agollo/v4/internal/mockserver"
+	"github.com/gitcloneese/agollo/internal/mockserver"
 )
 
 func TestMain(m *testing.M) {
@@ -33,7 +33,7 @@ func TestAgolloStart(t *testing.T) {
 		return
 	}
 
-	if err := Start(conf); err != nil {
+	if _, err := Start(conf); err != nil {
 		t.Errorf("Start with app.properties should return nil, got :%v", err)
 		return
 	}

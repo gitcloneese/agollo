@@ -1,3 +1,3 @@
-module github.com/gitcloneese/agollo/v4
+module github.com/gitcloneese/agollo
 
 go 1.14
