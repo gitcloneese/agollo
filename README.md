@@ -27,7 +27,7 @@
 ## Installation
 
 ```sh
-go get -u github.com/gitcloneese/agollo/v4
+go get -u github.com/gitcloneese/agollo
 ```
 
 ## Usage
@@ -35,7 +35,7 @@ go get -u github.com/gitcloneese/agollo/v4
 ### Import agollo
 
 ```golang
-import "github.com/gitcloneese/agollo/v4"
+import "github.com/gitcloneese/agollo"
 ```
 
 ### In order to use agollo, issue a client or use the built-in default client
