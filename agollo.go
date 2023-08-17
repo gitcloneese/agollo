@@ -10,9 +10,15 @@ var (
 )
 
 // Start agollo client with Conf, start will block until fetch all config to local
-func Start(conf *Conf, opts ...ClientOption) error {
-	once.Do(func() { defaultClient = NewClient(conf, opts...) })
-	return defaultClient.Start()
+func Start(conf *Conf, opts ...ClientOption) (Client, error) {
+	//once.Do(func() { defaultClient = NewClient(conf, opts...) })
+	client := NewClient(conf, opts...)
+	err := client.Start()
+	if err != nil {
+		return nil, err
+	}
+	return client, nil
+
 }
 
 // Stop sync config
